@@ -1,4 +1,4 @@
-# StringFormattingUtils
+# Swift String Formatting Utilities
 
 <!-- Header Logo -->
 
@@ -52,7 +52,7 @@ let package = Package(
         .package(
             name: "CypherPoetStringFormattingUtils",
             url: "https://github.com/CypherPoet/StringFormattingUtils",
-            .exact("0.0.1")
+            .upToNextMinor(from: "0.1.0")
         ),
     ],
     //...
