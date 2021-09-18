@@ -1,3 +1,3 @@
-struct MyLibraryName {
+struct StringFormattingUtils {
     var text = "Hello, World!"
 }

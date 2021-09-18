@@ -1,5 +1,6 @@
-# ``MyLibraryName``
+# ``StringFormattingUtils``
 
+Utilities for formatting `String` objects in Swift.
 
 ## Overview
 

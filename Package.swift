@@ -4,19 +4,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "MyPackageName",
+    name: "CypherPoetStringFormattingUtils",
     platforms: [
-        .iOS(.v15),
-        .macOS(.v12),
-        .tvOS(.v15),
-        .watchOS(.v8),
+        .iOS(.v13),
+        .macOS(.v11),
+        .tvOS(.v13),
+        .watchOS(.v6),
     ],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
-            name: "MyLibraryName",
+            name: "StringFormattingUtils",
             targets: [
-                "MyLibraryName",
+                "StringFormattingUtils",
             ]
         ),
     ],
@@ -28,20 +28,20 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
-            name: "MyLibraryName",
+            name: "StringFormattingUtils",
             dependencies: [
             ],
-            path: "Sources/MyLibraryName/",
+            path: "Sources/StringFormattingUtils/",
             resources: [
                 .process("Resources"),
             ]
         ),
         .testTarget(
-            name: "MyLibraryNameTests",
+            name: "StringFormattingUtilsTests",
             dependencies: [
-                "MyLibraryName",
+                "StringFormattingUtils",
             ],
-            path: "Tests/MyLibraryName/",
+            path: "Tests/StringFormattingUtils/",
             exclude: [
                 "Resources/README.md",
                 "Toolbox/README.md",
